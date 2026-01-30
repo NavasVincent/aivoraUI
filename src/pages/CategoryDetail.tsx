@@ -1,7 +1,6 @@
-import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Zap, Command, Cpu, BarChart3, Layers, Smartphone, Copy, Check, Eye } from 'lucide-react';
+import { ArrowLeft, Zap, Command, Cpu, BarChart3, Layers, Smartphone } from 'lucide-react';
 import CodeBlock from '../components/CodeBlock';
 
 const categoryData: Record<string, any> = {

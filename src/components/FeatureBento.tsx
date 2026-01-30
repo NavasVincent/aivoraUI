@@ -1,14 +1,13 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 import { Shield, Zap, Layout, Palette, Code, BarChart3, Users, Smartphone } from 'lucide-react';
 
 const FeatureBento = () => {
-    const fadeIn = {
+    const fadeIn: Variants = {
         hidden: { opacity: 0, y: 20 },
         visible: (i: number) => ({
             opacity: 1,
             y: 0,
-            transition: { delay: i * 0.1, duration: 0.5, ease: "easeOut" }
+            transition: { delay: i * 0.1, duration: 0.5, ease: "easeOut" as const }
         })
     };
 

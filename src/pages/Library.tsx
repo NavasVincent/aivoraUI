@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import ComponentGrid from '../components/ComponentGrid';
 
 const Library = () => {
@@ -21,8 +21,8 @@ const Library = () => {
                             key={cat}
                             onClick={() => setActiveCategory(cat)}
                             className={`px-6 py-2 rounded-full text-sm font-semibold border transition-all ${activeCategory === cat
-                                    ? 'bg-primary-500 border-primary-500 text-white shadow-lg shadow-primary-500/20'
-                                    : 'bg-white/5 border-white/10 text-slate-400 hover:text-white hover:bg-white/10'
+                                ? 'bg-primary-500 border-primary-500 text-white shadow-lg shadow-primary-500/20'
+                                : 'bg-white/5 border-white/10 text-slate-400 hover:text-white hover:bg-white/10'
                                 }`}
                         >
                             {cat}

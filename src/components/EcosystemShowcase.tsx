@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import {
-    Zap, Layout, Smartphone, BarChart3,
-    Shield, Palette, Command, MousePointer2,
+    Zap, Smartphone, BarChart3,
+    Palette, Command, MousePointer2,
     Layers, Cpu, Globe, Rocket
 } from 'lucide-react';
 
@@ -103,7 +102,6 @@ const categories = [
 ];
 
 const EcosystemShowcase = () => {
-    const [hoveredId, setHoveredId] = useState<string | null>(null);
 
     return (
         <section className="py-24 relative bg-slate-950 overflow-hidden">
@@ -153,8 +151,6 @@ const EcosystemShowcase = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: idx * 0.1 }}
-                                onMouseEnter={() => setHoveredId(cat.id)}
-                                onMouseLeave={() => setHoveredId(null)}
                                 className="glass-card p-1 group"
                             >
                                 <Link

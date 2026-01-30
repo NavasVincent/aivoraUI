@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 import { motion } from 'framer-motion';
-import { Rocket, Code2, Play, Layout, Share2, Sparkles, AlertCircle, Check } from 'lucide-react';
+import { Code2, Play, Layout, Share2, Sparkles, AlertCircle, Check } from 'lucide-react';
 import * as LucideIcons from 'lucide-react';
 
 const initialReactCode = `

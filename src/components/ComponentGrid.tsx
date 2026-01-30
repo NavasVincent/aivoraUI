@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import SpotlightCard from './SpotlightCard';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Check, Copy } from 'lucide-react';

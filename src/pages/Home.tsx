@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Hero from '../components/Hero';
 import ComponentGrid from '../components/ComponentGrid';
 import FeatureBento from '../components/FeatureBento';
